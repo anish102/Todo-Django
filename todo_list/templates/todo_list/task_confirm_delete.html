@@ -1,3 +1,6 @@
+{% extends 'todo_list/main.html' %}
+{% block content %}
+
 <a href="{% url 'tasks' %}">Back</a>
 
 <form method="POST">
@@ -5,3 +8,5 @@
     <p>Are you sure to delete the task?</p>
     <input type="submit" value="Delete" />
 </form>
+
+{% endblock content %}
